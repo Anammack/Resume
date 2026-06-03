@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Austin Nammack | Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ PARTICLE CANVAS BACKGROUND ░░ -->
+  <canvas id="particles"></canvas>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">&lt;AN /&gt;</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <header id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Austin Nammack</h1>
+      <div class="hero-typewriter">
+        <span class="tw-prefix">const role = "</span><span id="typewriter"></span><span class="tw-cursor">|</span><span class="tw-suffix">";</span>
+      </div>
+      <p class="hero-summary">
+        Frontend developer &amp; founder of <a href="https://ramstar.online" target="_blank" rel="noopener">Ramstar.online</a> — building
+        fast, responsive digital experiences and pursuing a Master's in Computer Science.
+      </p>
+      <div class="hero-actions">
+        <a href="#experience" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:anammack@gmail.com" aria-label="Email" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+        </a>
+        <a href="https://ramstar.online" target="_blank" rel="noopener" aria-label="Website" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </a>
+        <a href="tel:+15406612304" aria-label="Phone" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">01 &mdash; About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a <strong>frontend developer and software engineer</strong> based in Charlottesville, VA,
+            passionate about turning ideas into polished, performant web experiences. As the <strong>founder of
+            Ramstar.online</strong>, I lead a team delivering custom websites and hosting solutions for small
+            businesses.
+          </p>
+          <p>
+            Currently pursuing a <strong>Master's degree in Computer Science</strong>, I'm constantly leveling
+            up my skills in scalable systems, cloud infrastructure, and modern JavaScript frameworks. I'm open
+            to relocation within the Waynesboro–Charlottesville corridor.
+          </p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years Dev Experience</span></div>
+            <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Sites Shipped</span></div>
+            <div class="stat"><span class="stat-num">M.S.</span><span class="stat-label">CS In Progress</span></div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="code-card">
+            <div class="code-card-bar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="code-card-title">austin.js</span>
+            </div>
+            <pre class="code-card-body"><code><span class="c-kw">const</span> <span class="c-var">austin</span> = {
+  <span class="c-prop">location</span>: <span class="c-str">"Charlottesville, VA"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Frontend Developer"</span>,
+  <span class="c-prop">company</span>: <span class="c-str">"Ramstar.online"</span>,
+  <span class="c-prop">education</span>: <span class="c-str">"M.S. Computer Science"</span>,
+  <span class="c-prop">languages</span>: [
+    <span class="c-str">"JavaScript"</span>, <span class="c-str">"HTML5"</span>,
+    <span class="c-str">"CSS3"</span>, <span class="c-str">"Java"</span>
+  ],
+  <span class="c-prop">openToWork</span>: <span class="c-kw">true</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ EXPERIENCE ░░ -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-label">02 &mdash; Experience</div>
+      <h2 class="section-title">Work History</h2>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">Web Developer</h3>
+                <p class="tc-company"><a href="https://ramstar.online" target="_blank" rel="noopener">Ramstar</a> &mdash; Charlottesville, VA</p>
+              </div>
+              <span class="tc-date">Nov 2023 &ndash; Present</span>
+            </div>
+            <ul class="tc-list">
+              <li>Design and develop <strong>mobile-first, responsive websites</strong> for small business clients.</li>
+              <li>Manage client relationships, project scopes, and delivery timelines as <strong>founder &amp; lead developer</strong>.</li>
+              <li>Provide <strong>custom hosting solutions</strong> and ongoing technical support.</li>
+              <li>Implement modern JavaScript frameworks, APIs, and CMS integrations (including <strong>Shopify &amp; e-commerce</strong>).</li>
+              <li>Maintain version control workflows using <strong>Git</strong> and collaborative tooling.</li>
+            </ul>
+            <div class="tc-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span>
+              <span>APIs</span><span>Shopify</span><span>Git</span><span>Hosting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">Lead Cook</h3>
+                <p class="tc-company">Bowlero &mdash; Fredericksburg, VA</p>
+              </div>
+              <span class="tc-date">Feb 2014 &ndash; Present</span>
+            </div>
+            <ul class="tc-list">
+              <li>Lead a kitchen crew to ensure consistently excellent customer experiences.</li>
+              <li>Operate and maintain <strong>POS systems</strong> and kitchen equipment.</li>
+              <li>Uphold <strong>ServSafe Management</strong> standards and food safety protocols.</li>
+              <li>Demonstrate strong <strong>team leadership, time management, and cross-functional collaboration</strong> daily.</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Leadership</span><span>POS Systems</span><span>Team Management</span><span>ServSafe</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SKILLS ░░ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label">03 &mdash; Skills</div>
+      <h2 class="section-title">Technical Expertise</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category" data-aos>
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Frontend Development</h3>
+          <div class="skill-pills">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span>
+            <span>Responsive Design</span><span>JS Frameworks</span><span>ECMAScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos>
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Web &amp; E-Commerce</h3>
+          <div class="skill-pills">
+            <span>Web Development</span><span>Shopify</span><span>E-commerce</span>
+            <span>Website Maintenance</span><span>Digital Design</span><span>APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos>
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Backend &amp; Systems</h3>
+          <div class="skill-pills">
+            <span>Java</span><span>Databases</span><span>Microsoft SQL Server</span>
+            <span>Cloud-based Systems</span><span>Scalable Systems</span><span>Operating Systems</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos>
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+          </div>
+          <h3>DevOps &amp; Tooling</h3>
+          <div class="skill-pills">
+            <span>Git</span><span>Version Control</span><span>Visual Studio</span>
+            <span>Software Deployment</span><span>Root Cause Analysis</span><span>Software Troubleshooting</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos>
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>IT &amp; Support</h3>
+          <div class="skill-pills">
+            <span>IT Support</span><span>Help Desk</span><span>Computer Networking</span>
+            <span>Computer Hardware</span><span>Windows Administration</span><span>Technical Support</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos>
+          <div class="skill-cat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Productivity &amp; Collab</h3>
+          <div class="skill-pills">
+            <span>Microsoft 365</span><span>Google Workspace</span><span>Project Management</span>
+            <span>Cross-functional Collaboration</span><span>Communication</span><span>Leadership</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ EDUCATION ░░ -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-label">04 &mdash; Education</div>
+      <h2 class="section-title">Academic Background</h2>
+      <div class="edu-grid">
+        <div class="edu-card" data-aos>
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <h3>Master of Science &mdash; Computer Science</h3>
+            <p class="edu-school">In Progress</p>
+            <ul class="edu-notes">
+              <li>Deepening expertise in algorithms, scalable systems, and software engineering.</li>
+              <li>Applying academic knowledge directly to real-world projects at Ramstar.</li>
+            </ul>
+          </div>
+          <span class="edu-badge">Graduate</span>
+        </div>
+
+        <div class="edu-card" data-aos>
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <h3>Bachelor of Science &mdash; Information Technology</h3>
+            <p class="edu-school">Purdue University &mdash; Remote &nbsp;|&nbsp; Nov 2021 &ndash; Present</p>
+            <ul class="edu-notes">
+              <li>Completed relevant internships in the IT and software development domains.</li>
+              <li>Member of the <strong>Honor Society of Leadership</strong>.</li>
+            </ul>
+          </div>
+          <span class="edu-badge">Undergraduate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CERTIFICATIONS ░░ -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-label">05 &mdash; Certifications</div>
+      <h2 class="section-title">Licenses &amp; Certifications</h2>
+      <div class="cert-grid">
+
+        <div class="cert-card" data-aos>
+          <div class="cert-icon cert-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div class="cert-body">
+            <h3>ServSafe Manager Certified</h3>
+            <p>License #26514297 &mdash; Valid Nov 2024 &ndash; Nov 2029</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos>
+          <div class="cert-icon cert-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div class="cert-body">
+            <h3>CPR Certification</h3>
+            <p>Emergency response certified</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos>
+          <div class="cert-icon cert-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div class="cert-body">
+            <h3>Food Handler Certification</h3>
+            <p>ServSafe — Active</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos>
+          <div class="cert-icon cert-yellow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div class="cert-body">
+            <h3>Driver's License</h3>
+            <p>Virginia — Valid</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-label">06 &mdash; Contact</div>
+      <h2 class="section-title">Let's Build Something</h2>
+      <p class="contact-sub">
+        Whether you have a project in mind, a job opportunity, or just want to say hello — my inbox is always open.
+      </p>
+      <div class="contact-cards">
+        <a href="mailto:anammack@gmail.com" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          <span>anammack@gmail.com</span>
+        </a>
+        <a href="tel:+15406612304" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+          <span>+1 (540) 661-2304</span>
+        </a>
+        <a href="https://ramstar.online" target="_blank" rel="noopener" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>ramstar.online</span>
+        </a>
+        <div class="contact-card no-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Charlottesville, VA 22903</span>
+        </div>
+      </div>
+      <a href="mailto:anammack@gmail.com" class="btn btn-primary btn-lg">Say Hello →</a>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-logo">&lt;AN /&gt;</span>
+      <p>Designed &amp; Built by <strong>Austin Nammack</strong> &copy; 2026</p>
+      <a href="https://ramstar.online" target="_blank" rel="noopener" class="footer-link">ramstar.online</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
